@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "OfaMKqHjqeo1n854oekEeZg4USydFC6NiVX7E0p4KNuD7VD/VAwNPCvaV0ill70pcHe8LxWZHMI8gPPOq9EPsQ==",
+  "success": true,
+  "projectFilePath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.API/ToDo.API.csproj",
+  "expectedPackageFiles": [
+    "/home/leandrobezerra/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/leandrobezerra/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/leandrobezerra/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/home/leandrobezerra/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/home/leandrobezerra/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/home/leandrobezerra/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
