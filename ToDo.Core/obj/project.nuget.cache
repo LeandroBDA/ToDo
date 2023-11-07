@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "7huPrDatlXRmJ5j97T4N8ubrXpZti3gNXerZdvT9m21Z7yzbU/cH3AbAR6MjCpExk6tSOvmCKUZ6hLVK5fffaQ==",
+  "dgSpecHash": "F2XQtFw/Pxa3yz4cBEsOISgxz4gOXN8fprqXV8/RiCrCarxzxZvEK/3xs8Tqj7ACkFqfZdJM0al7t0rSaUDePQ==",
   "success": true,
-  "projectFilePath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Domain/ToDo.Domain.csproj",
+  "projectFilePath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Core/ToDo.Core.csproj",
   "expectedPackageFiles": [
-    "/home/leandrobezerra/.nuget/packages/fluentvalidation/11.8.0/fluentvalidation.11.8.0.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/microsoft.entityframeworkcore/6.0.22/microsoft.entityframeworkcore.6.0.22.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.22/microsoft.entityframeworkcore.abstractions.6.0.22.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.22/microsoft.entityframeworkcore.analyzers.6.0.22.nupkg.sha512",

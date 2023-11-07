@@ -2,19 +2,6 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "FluentValidation/11.8.0": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/FluentValidation.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/FluentValidation.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Microsoft.EntityFrameworkCore/6.0.22": {
         "type": "package",
         "dependencies": {
@@ -316,46 +303,10 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
-      },
-      "ToDo.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Pomelo.EntityFrameworkCore.Lolita2.MySql": "6.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ToDo.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ToDo.Core.dll": {}
-        }
       }
     }
   },
   "libraries": {
-    "FluentValidation/11.8.0": {
-      "sha512": "TiEaaYqSIAS+wXQv46LRm8Mca092XYNePD0n231Hqlkmm5FuToZoWnjI1ef/vJUxBzqR7/k2vaVQXxijNgVKRQ==",
-      "type": "package",
-      "path": "fluentvalidation/11.8.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "fluent-validation-icon.png",
-        "fluentvalidation.11.8.0.nupkg.sha512",
-        "fluentvalidation.nuspec",
-        "lib/net5.0/FluentValidation.dll",
-        "lib/net5.0/FluentValidation.xml",
-        "lib/net6.0/FluentValidation.dll",
-        "lib/net6.0/FluentValidation.xml",
-        "lib/net7.0/FluentValidation.dll",
-        "lib/net7.0/FluentValidation.xml",
-        "lib/netstandard2.0/FluentValidation.dll",
-        "lib/netstandard2.0/FluentValidation.xml",
-        "lib/netstandard2.1/FluentValidation.dll",
-        "lib/netstandard2.1/FluentValidation.xml"
-      ]
-    },
     "Microsoft.EntityFrameworkCore/6.0.22": {
       "sha512": "vNe+y8ZsEf1CsfmfYttfKAz/IgCCtphgguvao0HWNJNdjZf9cabD288nZJ17b/WaQMWXhLwYAsofk8vNVkfTOA==",
       "type": "package",
@@ -735,19 +686,11 @@
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "ToDo.Core/1.0.0": {
-      "type": "project",
-      "path": "../ToDo.Core/ToDo.Core.csproj",
-      "msbuildProject": "../ToDo.Core/ToDo.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "FluentValidation >= 11.8.0",
-      "Microsoft.EntityFrameworkCore.Relational >= 6.0.22",
-      "Pomelo.EntityFrameworkCore.Lolita2.MySql >= 6.0.0",
-      "ToDo.Core >= 1.0.0"
+      "Pomelo.EntityFrameworkCore.Lolita2.MySql >= 6.0.0"
     ]
   },
   "packageFolders": {
@@ -756,11 +699,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Domain/ToDo.Domain.csproj",
-      "projectName": "ToDo.Domain",
-      "projectPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Domain/ToDo.Domain.csproj",
+      "projectUniqueName": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Core/ToDo.Core.csproj",
+      "projectName": "ToDo.Core",
+      "projectPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Core/ToDo.Core.csproj",
       "packagesPath": "/home/leandrobezerra/.nuget/packages/",
-      "outputPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Domain/obj/",
+      "outputPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Core/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/leandrobezerra/.nuget/NuGet/NuGet.Config"
@@ -774,11 +717,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Core/ToDo.Core.csproj": {
-              "projectPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Core/ToDo.Core.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -791,14 +730,6 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-          "FluentValidation": {
-            "target": "Package",
-            "version": "[11.8.0, )"
-          },
-          "Microsoft.EntityFrameworkCore.Relational": {
-            "target": "Package",
-            "version": "[6.0.22, )"
-          },
           "Pomelo.EntityFrameworkCore.Lolita2.MySql": {
             "target": "Package",
             "version": "[6.0.0, )"

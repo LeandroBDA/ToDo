@@ -1,6 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 using System.Security.Cryptography;
+using Manager.Core.Exceptions;
 using Manager.Domain.Entites;
+using Manager.Domain.Validators;
+
 namespace Manager.Domain.Entites
 {
     public abstract class User : Base
@@ -47,7 +50,7 @@ namespace Manager.Domain.Entites
                 {
                     _errors.Add((error.ErrorMessage));
                 }
-                throw new DomainExeption($"Alguns campos stão inválidos {_errors[0]}");
+                throw new DomainException($"Alguns campos stão inválidos {_errors[0]}");
             }
             return true;
         }
