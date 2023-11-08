@@ -1,0 +1,12 @@
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.Application/bin/Debug/net6.0/ToDo.Application.deps.json
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.Application/bin/Debug/net6.0/ToDo.Application.dll
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.Application/bin/Debug/net6.0/ToDo.Application.pdb
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.Application/obj/Debug/net6.0/ToDo.Application.csproj.AssemblyReference.cache
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.Application/obj/Debug/net6.0/ToDo.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.Application/obj/Debug/net6.0/ToDo.Application.AssemblyInfoInputs.cache
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.Application/obj/Debug/net6.0/ToDo.Application.AssemblyInfo.cs
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.Application/obj/Debug/net6.0/ToDo.Application.csproj.CoreCompileInputs.cache
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.Application/obj/Debug/net6.0/ToDo.Application.dll
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.Application/obj/Debug/net6.0/refint/ToDo.Application.dll
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.Application/obj/Debug/net6.0/ToDo.Application.pdb
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.Application/obj/Debug/net6.0/ref/ToDo.Application.dll

@@ -41,7 +41,7 @@ namespace Manager.Domain.Entites
         } 
         public override bool Validate()
         {
-            var validator = new Uservalidator();
+            var validator = new UserValidator();
             var validation = validator.Validate(this);
 
             if (!validation.IsValid)

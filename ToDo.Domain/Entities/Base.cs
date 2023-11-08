@@ -1,4 +1,3 @@
-
 namespace Manager.Domain.Entites
 {
     public abstract class Base

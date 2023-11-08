@@ -4,9 +4,9 @@ using Manager.Domain.Entites;
 
 namespace Manager.Domain.Validators
 {
-    public class Uservalidator : AbstractValidator<User>
+    public class UserValidator : AbstractValidator<User>
     {
-        public Uservalidator()
+        public UserValidator()
         {
             RuleFor(x => x)
                 .NotEmpty().WithMessage("A entidade não ser vazia.")
