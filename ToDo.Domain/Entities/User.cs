@@ -9,7 +9,6 @@ namespace Manager.Domain.Entites
     public abstract class User : Base
     {
         protected User() { }
-        
         public User(Guid id, string role, string name, string email, string password)
         {
             Id = id;
@@ -23,28 +22,24 @@ namespace Manager.Domain.Entites
         public string Name { get; private set; }
         public string Email { get; private set; }
         public string  Password { get; private set; }
-
         public void ChangeName(string name)
         {
-            Name = name;
-            Validate();
-        }
+            Name = name; Validate();
+        } 
         public void ChangeEmail(string email)
         {
-            Email = email;
-            Validate();
-        }
+            Email = email; Validate();
+        } 
         public void ChangePassword(string password)
         {
-            Password = password;
-            Validate();
+            Password = password; Validate();
         } 
         public override bool Validate()
         {
             var validator = new UserValidator();
             var validation = validator.Validate(this);
 
-            if (!validation.IsValid)
+            if (validation.IsValid)
             {
                 foreach (var error in validation.Errors)
                 {

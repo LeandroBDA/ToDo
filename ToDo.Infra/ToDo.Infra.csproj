@@ -20,4 +20,16 @@
       <PackageReference Include="Pomelo.EntityFrameworkCore.Lolita2.MySql" Version="6.0.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Migrations\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ToDo.Domain\ToDo.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Repositories\5-Context.cs" />
+    </ItemGroup>
+
 </Project>

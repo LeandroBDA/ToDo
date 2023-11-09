@@ -7,7 +7,7 @@ namespace ToDo.Domain.Entities
             PAtual = 1;
             PTake = 20;
         }
-        public TaskSearch(string name, 
+        public TaskSearch ( string name, 
             string description, 
             bool concluded, 
             int pAtual, int pTake, 
@@ -15,7 +15,7 @@ namespace ToDo.Domain.Entities
             bool? orderByZ, 
             bool? maiorQue, 
             bool? menorQue, 
-            DateTime? createdTime)
+            DateTime? createdTime )
         {
             Name = name;
             PTake = pTake;
