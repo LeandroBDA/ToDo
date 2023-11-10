@@ -12,3 +12,8 @@
 /home/leandrobezerra/RiderProjects/ToDo/ToDo.Infra/obj/Debug/net6.0/ToDo.Infra.pdb
 /home/leandrobezerra/RiderProjects/ToDo/ToDo.Infra/obj/Debug/net6.0/ToDo.Infra.genruntimeconfig.cache
 /home/leandrobezerra/RiderProjects/ToDo/ToDo.Infra/obj/Debug/net6.0/ref/ToDo.Infra.dll
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.Infra/bin/Debug/net6.0/ToDo.Core.dll
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.Infra/bin/Debug/net6.0/ToDo.Domain.dll
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.Infra/bin/Debug/net6.0/ToDo.Domain.pdb
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.Infra/bin/Debug/net6.0/ToDo.Core.pdb
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.Infra/obj/Debug/net6.0/ToDo.Infra.csproj.CopyComplete

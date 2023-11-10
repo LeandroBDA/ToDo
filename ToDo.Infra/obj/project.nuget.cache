@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PQBwsgMCJIG3AF/+ov8cC7MaV4B9Cnqdz0XNkU67YM5Teeu+E0BzH7YJiabn9CxaU49tgURWAQrSMy41bzqwWw==",
+  "dgSpecHash": "6ujaac3/QJFpPAjvshTboaJJ+1+Gg6ZFw6LVGGpwhPwASTRcI5J5s4Kya8OSiJFiNIgEon2MKEeItRixzmNOeg==",
   "success": true,
   "projectFilePath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Infra/ToDo.Infra.csproj",
   "expectedPackageFiles": [
@@ -21,8 +21,10 @@
     "/home/leandrobezerra/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.0/microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/home/leandrobezerra/.nuget/packages/mysqlconnector/2.1.2/mysqlconnector.2.1.2.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/pomelo.entityframeworkcore.lolita2/6.0.0/pomelo.entityframeworkcore.lolita2.6.0.0.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/pomelo.entityframeworkcore.lolita2.mysql/6.0.0/pomelo.entityframeworkcore.lolita2.mysql.6.0.0.nupkg.sha512",
+    "/home/leandrobezerra/.nuget/packages/pomelo.entityframeworkcore.mysql/6.0.2/pomelo.entityframeworkcore.mysql.6.0.2.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/system.diagnostics.diagnosticsource/6.0.1/system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"

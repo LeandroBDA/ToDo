@@ -112,6 +112,10 @@
             "Pomelo.EntityFrameworkCore.Lolita2.MySql": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -192,9 +196,9 @@
               "target": "Package",
               "version": "[6.0.22, )"
             },
-            "Pomelo.EntityFrameworkCore.Lolita2.MySql": {
+            "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [

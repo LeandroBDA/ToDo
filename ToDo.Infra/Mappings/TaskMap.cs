@@ -1,5 +1,5 @@
 using FluentValidation;
-using Manager.Domain.Validators;
+using ToDo.Domain.Validators;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

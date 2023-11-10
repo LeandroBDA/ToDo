@@ -1,4 +1,4 @@
-namespace Manager.Core.Exceptions
+namespace ToDo.Core.Exceptions
 {
     public class DomainException : Exception
     {

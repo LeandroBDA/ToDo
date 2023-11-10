@@ -11,6 +11,7 @@
           "FluentValidation": "11.8.0",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.22",
           "Pomelo.EntityFrameworkCore.Lolita2.MySql": "6.0.0",
+          "Pomelo.EntityFrameworkCore.MySql": "6.0.2",
           "ToDo.Core": "1.0.0"
         },
         "runtime": {
@@ -166,6 +167,14 @@
           }
         }
       },
+      "MySqlConnector/2.1.2": {
+        "runtime": {
+          "lib/net6.0/MySqlConnector.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.2.0"
+          }
+        }
+      },
       "Pomelo.EntityFrameworkCore.Lolita2/6.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "6.0.22"
@@ -185,6 +194,19 @@
           "lib/net6.0/Pomelo.EntityFrameworkCore.Lolita.MySql.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.0.0"
+          }
+        }
+      },
+      "Pomelo.EntityFrameworkCore.MySql/6.0.2": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.22",
+          "Microsoft.Extensions.DependencyInjection": "6.0.1",
+          "MySqlConnector": "2.1.2"
+        },
+        "runtime": {
+          "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll": {
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.2.0"
           }
         }
       },
@@ -319,6 +341,13 @@
       "path": "microsoft.extensions.primitives/6.0.0",
       "hashPath": "microsoft.extensions.primitives.6.0.0.nupkg.sha512"
     },
+    "MySqlConnector/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JVokQTUNN3WHAu9Vw8ieeq1dXTFokJiig5P0VJ4f439UxRrsPo6SaVWC8Zdm6mkPeQFhZ0/9afdWa02EY/1j/w==",
+      "path": "mysqlconnector/2.1.2",
+      "hashPath": "mysqlconnector.2.1.2.nupkg.sha512"
+    },
     "Pomelo.EntityFrameworkCore.Lolita2/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -332,6 +361,13 @@
       "sha512": "sha512-tXWIIB/v104gw4XQ0W6Km0fks7YrenmYADZiHedQfDxsym0FkCgj3Ew9zD9l1Hy2KP82IY36oXmSu0gqH80Ytg==",
       "path": "pomelo.entityframeworkcore.lolita2.mysql/6.0.0",
       "hashPath": "pomelo.entityframeworkcore.lolita2.mysql.6.0.0.nupkg.sha512"
+    },
+    "Pomelo.EntityFrameworkCore.MySql/6.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KvlZ800CnEuEGnxj5OT1fCKGjQXxW5kpPlCP91JqBYG+2Z3927eqXmlX6LLKUt4swqE8ZsEQ+Zkpab8bqstf4g==",
+      "path": "pomelo.entityframeworkcore.mysql/6.0.2",
+      "hashPath": "pomelo.entityframeworkcore.mysql.6.0.2.nupkg.sha512"
     },
     "System.Collections.Immutable/6.0.0": {
       "type": "package",

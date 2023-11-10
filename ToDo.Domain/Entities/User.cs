@@ -1,12 +1,10 @@
-using System.ComponentModel.DataAnnotations;
-using System.Security.Cryptography;
-using Manager.Core.Exceptions;
-using Manager.Domain.Entites;
-using Manager.Domain.Validators;
+using ToDo.Core.Exceptions;
+using ToDo.Domain.Entites;
+using ToDo.Domain.Validators;
 
-namespace Manager.Domain.Entites
+namespace ToDo.Domain.Entities
 {
-    public abstract class User : Base
+    public class User : Base
     {
         protected User() { }
         public User(Guid id, string role, string name, string email, string password)
@@ -22,6 +20,9 @@ namespace Manager.Domain.Entites
         public string Name { get; private set; }
         public string Email { get; private set; }
         public string  Password { get; private set; }
+        
+        //ef
+        public List<Tasks> Tasks { get; set; } = new List<Tasks>();
         public void ChangeName(string name)
         {
             Name = name; Validate();

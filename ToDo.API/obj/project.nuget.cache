@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "uuLpoSMW7tztTBleppLm+41gGDvK8+QN7wfahxL7NY04LnerrYU9VJXr4hcd18HWaQ2L3L5ZmixacHS/5owNoA==",
+  "dgSpecHash": "SG6ftfSa+j2Avl+FgR/WMQxRDAzwOCYjuYqEGcWw+p97aVQRTnVKGGoy1BwEStaIaPPFs9Wii+uDOZKdWQ/4Mg==",
   "success": true,
   "projectFilePath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.API/ToDo.API.csproj",
   "expectedPackageFiles": [
+    "/home/leandrobezerra/.nuget/packages/fluentvalidation/11.8.0/fluentvalidation.11.8.0.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/microsoft.entityframeworkcore/6.0.22/microsoft.entityframeworkcore.6.0.22.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.22/microsoft.entityframeworkcore.abstractions.6.0.22.nupkg.sha512",
@@ -22,8 +23,10 @@
     "/home/leandrobezerra/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/leandrobezerra/.nuget/packages/mysqlconnector/2.1.2/mysqlconnector.2.1.2.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/pomelo.entityframeworkcore.lolita2/6.0.0/pomelo.entityframeworkcore.lolita2.6.0.0.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/pomelo.entityframeworkcore.lolita2.mysql/6.0.0/pomelo.entityframeworkcore.lolita2.mysql.6.0.0.nupkg.sha512",
+    "/home/leandrobezerra/.nuget/packages/pomelo.entityframeworkcore.mysql/6.0.2/pomelo.entityframeworkcore.mysql.6.0.2.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",

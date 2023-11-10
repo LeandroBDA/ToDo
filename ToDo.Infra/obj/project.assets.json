@@ -284,6 +284,19 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "MySqlConnector/2.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MySqlConnector.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MySqlConnector.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Pomelo.EntityFrameworkCore.Lolita2/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -306,6 +319,24 @@
         },
         "runtime": {
           "lib/net6.0/Pomelo.EntityFrameworkCore.Lolita.MySql.dll": {}
+        }
+      },
+      "Pomelo.EntityFrameworkCore.MySql/6.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "[6.0.7, 7.0.0)",
+          "Microsoft.Extensions.DependencyInjection": "6.0.0",
+          "MySqlConnector": "2.1.2"
+        },
+        "compile": {
+          "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Collections.Immutable/6.0.0": {
@@ -382,6 +413,7 @@
           "FluentValidation": "11.8.0",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.22",
           "Pomelo.EntityFrameworkCore.Lolita2.MySql": "6.0.0",
+          "Pomelo.EntityFrameworkCore.MySql": "6.0.2",
           "ToDo.Core": "1.0.0"
         },
         "compile": {
@@ -756,6 +788,35 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "MySqlConnector/2.1.2": {
+      "sha512": "JVokQTUNN3WHAu9Vw8ieeq1dXTFokJiig5P0VJ4f439UxRrsPo6SaVWC8Zdm6mkPeQFhZ0/9afdWa02EY/1j/w==",
+      "type": "package",
+      "path": "mysqlconnector/2.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net45/MySqlConnector.dll",
+        "lib/net45/MySqlConnector.xml",
+        "lib/net461/MySqlConnector.dll",
+        "lib/net461/MySqlConnector.xml",
+        "lib/net471/MySqlConnector.dll",
+        "lib/net471/MySqlConnector.xml",
+        "lib/net5.0/MySqlConnector.dll",
+        "lib/net5.0/MySqlConnector.xml",
+        "lib/net6.0/MySqlConnector.dll",
+        "lib/net6.0/MySqlConnector.xml",
+        "lib/netcoreapp3.1/MySqlConnector.dll",
+        "lib/netcoreapp3.1/MySqlConnector.xml",
+        "lib/netstandard2.0/MySqlConnector.dll",
+        "lib/netstandard2.0/MySqlConnector.xml",
+        "lib/netstandard2.1/MySqlConnector.dll",
+        "lib/netstandard2.1/MySqlConnector.xml",
+        "logo.png",
+        "mysqlconnector.2.1.2.nupkg.sha512",
+        "mysqlconnector.nuspec"
+      ]
+    },
     "Pomelo.EntityFrameworkCore.Lolita2/6.0.0": {
       "sha512": "e3liOin1rFwKNGCyG43b3FEgHN2JFrKjEmjnz9vdyKy7C3tCzrKxVS/cDsea86a58yqVkLyGwUUzkaveipez3A==",
       "type": "package",
@@ -778,6 +839,20 @@
         "lib/net6.0/Pomelo.EntityFrameworkCore.Lolita.MySql.dll",
         "pomelo.entityframeworkcore.lolita2.mysql.6.0.0.nupkg.sha512",
         "pomelo.entityframeworkcore.lolita2.mysql.nuspec"
+      ]
+    },
+    "Pomelo.EntityFrameworkCore.MySql/6.0.2": {
+      "sha512": "KvlZ800CnEuEGnxj5OT1fCKGjQXxW5kpPlCP91JqBYG+2Z3927eqXmlX6LLKUt4swqE8ZsEQ+Zkpab8bqstf4g==",
+      "type": "package",
+      "path": "pomelo.entityframeworkcore.mysql/6.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll",
+        "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.xml",
+        "pomelo.entityframeworkcore.mysql.6.0.2.nupkg.sha512",
+        "pomelo.entityframeworkcore.mysql.nuspec"
       ]
     },
     "System.Collections.Immutable/6.0.0": {
@@ -870,7 +945,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.22",
       "Microsoft.EntityFrameworkCore.Relational >= 6.0.22",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.22",
-      "Pomelo.EntityFrameworkCore.Lolita2.MySql >= 6.0.0",
+      "Pomelo.EntityFrameworkCore.MySql >= 6.0.2",
       "ToDo.Domain >= 1.0.0"
     ]
   },
@@ -935,9 +1010,9 @@
             "target": "Package",
             "version": "[6.0.22, )"
           },
-          "Pomelo.EntityFrameworkCore.Lolita2.MySql": {
+          "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",
-            "version": "[6.0.0, )"
+            "version": "[6.0.2, )"
           }
         },
         "imports": [

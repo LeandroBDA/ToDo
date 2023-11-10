@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace Manager.Domain.Validators
+namespace ToDo.Domain.Validators
 {
     public class TasksValidator : AbstractValidator<Tasks>
     {

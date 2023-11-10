@@ -35,3 +35,12 @@
 /home/leandrobezerra/RiderProjects/ToDo/ToDo.API/obj/Debug/net6.0/ToDo.API.pdb
 /home/leandrobezerra/RiderProjects/ToDo/ToDo.API/obj/Debug/net6.0/ToDo.API.genruntimeconfig.cache
 /home/leandrobezerra/RiderProjects/ToDo/ToDo.API/obj/Debug/net6.0/ref/ToDo.API.dll
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.API/bin/Debug/net6.0/FluentValidation.dll
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.API/bin/Debug/net6.0/MySqlConnector.dll
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.API/bin/Debug/net6.0/Pomelo.EntityFrameworkCore.MySql.dll
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.API/bin/Debug/net6.0/ToDo.Core.dll
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.API/bin/Debug/net6.0/ToDo.Domain.dll
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.API/bin/Debug/net6.0/ToDo.Infra.dll
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.API/bin/Debug/net6.0/ToDo.Infra.pdb
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.API/bin/Debug/net6.0/ToDo.Core.pdb
+/home/leandrobezerra/RiderProjects/ToDo/ToDo.API/bin/Debug/net6.0/ToDo.Domain.pdb

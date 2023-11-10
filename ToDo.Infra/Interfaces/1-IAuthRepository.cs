@@ -1,5 +1,6 @@
 
-using Manager.Domain.Entites;
+using ToDo.Domain.Entites;
+using ToDo.Domain.Entities;
 
 namespace ToDo.Infra.Interfaces
 {

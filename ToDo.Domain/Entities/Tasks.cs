@@ -1,11 +1,11 @@
-using System.Runtime.CompilerServices;
-using Manager.Core.Exceptions;
-using Manager.Domain.Entites;
+using ToDo.Domain.Entites;
 using Microsoft.EntityFrameworkCore.Migrations.Operations;
+using ToDo.Core.Exceptions;
+using ToDo.Domain.Entities;
 
-namespace Manager.Domain.Validators
+namespace ToDo.Domain.Validators
 {
-    public abstract class Tasks : Base
+    public class Tasks : Base
     {
         public Tasks()
         { }
@@ -39,6 +39,9 @@ namespace Manager.Domain.Validators
         public DateTime Deadline { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
+        
+        //ef
+        public User User { get; set; }
 
         public void ChangeName(string name)
         {

@@ -1,4 +1,4 @@
-namespace Manager.Domain.Entites
+namespace ToDo.Domain.Entites
 {
     public abstract class Base
     {
