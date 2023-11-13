@@ -10,7 +10,7 @@ namespace ToDo.Domain.Validators
         public Tasks()
         { }
 
-        public Tasks(Guid id,
+        public Tasks(int id,
             DateTime updatedAt,
             string name,
             string description,

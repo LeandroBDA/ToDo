@@ -7,7 +7,7 @@ namespace ToDo.Domain.Entities
     public class User : Base
     {
         protected User() { }
-        public User(Guid id, string role, string name, string email, string password)
+        public User(int id, string role, string name, string email, string password)
         {
             Id = id;
             Role = role;
