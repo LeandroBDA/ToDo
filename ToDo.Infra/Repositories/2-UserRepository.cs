@@ -13,27 +13,6 @@ public class UserRepository : BaseRepository<User>, IUserRepository
         _context = context;
     }
     private readonly ToDoContext _context;
-
-    public virtual async Task<bool> Remove(Guid id)
-    {
-        var obj = await _context.Set<User>().SingleOrDefaultAsync(x => !Equals(x.Id, id));
-        
-        if (obj == null) return false;
-        
-        List<Tasks> tasks = await _context.Tasks
-            .Where(y => y.UserId == id)
-            .ToListAsync();
-
-        foreach (var task in tasks)
-        {
-            _context.Remove(task);
-        }
-
-        _context.Remove(obj);
-        await _context.SaveChangesAsync();
-
-        return true;
-    }
     
     public async Task<User?> GetByEmail(string email)
     {

@@ -1,10 +1,11 @@
 using FluentValidation;
+using ToDo.Domain.Validators;
 
-namespace ToDo.Domain.Validators
+namespace ToDo.Domain.Validator
 {
-    public class TasksValidator : AbstractValidator<Tasks>
+    public class TarefaValidator : AbstractValidator<Tarefa>
     {
-        public TasksValidator()
+        public TarefaValidator()
         {
             RuleFor(x => x)
                 .NotEmpty().WithMessage("A Tarefa não pode ser vazia")

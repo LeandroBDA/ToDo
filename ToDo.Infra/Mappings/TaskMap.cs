@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace ToDo.Infra.Mappings
 {
-    public class TaskMap : IEntityTypeConfiguration<Tasks>
+    public class TaskMap : IEntityTypeConfiguration<Tarefa>
     {
-        public void Configure(EntityTypeBuilder<Tasks> builder)
+        public void Configure(EntityTypeBuilder<Tarefa> builder)
         {
             builder.ToTable("Task");
             builder.HasKey(x => x.Id);

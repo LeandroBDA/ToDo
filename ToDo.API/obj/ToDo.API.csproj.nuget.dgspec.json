@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/leandrobezerra/RiderProjects/ToDo/ToDo.API/ToDo.API.csproj": {}
+    "/home/leandrobezerra/ToDo/ToDo/ToDo.API/ToDo.API.csproj": {}
   },
   "projects": {
-    "/home/leandrobezerra/RiderProjects/ToDo/ToDo.API/ToDo.API.csproj": {
+    "/home/leandrobezerra/ToDo/ToDo/ToDo.API/ToDo.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.API/ToDo.API.csproj",
+        "projectUniqueName": "/home/leandrobezerra/ToDo/ToDo/ToDo.API/ToDo.API.csproj",
         "projectName": "ToDo.API",
-        "projectPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.API/ToDo.API.csproj",
+        "projectPath": "/home/leandrobezerra/ToDo/ToDo/ToDo.API/ToDo.API.csproj",
         "packagesPath": "/home/leandrobezerra/.nuget/packages/",
-        "outputPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.API/obj/",
+        "outputPath": "/home/leandrobezerra/ToDo/ToDo/ToDo.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/leandrobezerra/.nuget/NuGet/NuGet.Config"
@@ -26,11 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Infra/ToDo.Infra.csproj": {
-                "projectPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Infra/ToDo.Infra.csproj"
-              },
-              "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Services/ToDo.Services.csproj": {
-                "projectPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Services/ToDo.Services.csproj"
+              "/home/leandrobezerra/ToDo/ToDo/ToDo.Infra/ToDo.Infra.csproj": {
+                "projectPath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Infra/ToDo.Infra.csproj"
               }
             }
           }
@@ -45,6 +42,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.22, )"
@@ -91,14 +92,14 @@
         }
       }
     },
-    "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Core/ToDo.Core.csproj": {
+    "/home/leandrobezerra/ToDo/ToDo/ToDo.Core/ToDo.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Core/ToDo.Core.csproj",
+        "projectUniqueName": "/home/leandrobezerra/ToDo/ToDo/ToDo.Core/ToDo.Core.csproj",
         "projectName": "ToDo.Core",
-        "projectPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Core/ToDo.Core.csproj",
+        "projectPath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Core/ToDo.Core.csproj",
         "packagesPath": "/home/leandrobezerra/.nuget/packages/",
-        "outputPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Core/obj/",
+        "outputPath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/leandrobezerra/.nuget/NuGet/NuGet.Config"
@@ -125,6 +126,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Pomelo.EntityFrameworkCore.Lolita2.MySql": {
               "target": "Package",
               "version": "[6.0.0, )"
@@ -150,14 +155,14 @@
         }
       }
     },
-    "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Domain/ToDo.Domain.csproj": {
+    "/home/leandrobezerra/ToDo/ToDo/ToDo.Domain/ToDo.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Domain/ToDo.Domain.csproj",
+        "projectUniqueName": "/home/leandrobezerra/ToDo/ToDo/ToDo.Domain/ToDo.Domain.csproj",
         "projectName": "ToDo.Domain",
-        "projectPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Domain/ToDo.Domain.csproj",
+        "projectPath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Domain/ToDo.Domain.csproj",
         "packagesPath": "/home/leandrobezerra/.nuget/packages/",
-        "outputPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Domain/obj/",
+        "outputPath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/leandrobezerra/.nuget/NuGet/NuGet.Config"
@@ -172,8 +177,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Core/ToDo.Core.csproj": {
-                "projectPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Core/ToDo.Core.csproj"
+              "/home/leandrobezerra/ToDo/ToDo/ToDo.Core/ToDo.Core.csproj": {
+                "projectPath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Core/ToDo.Core.csproj"
               }
             }
           }
@@ -188,6 +193,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[11.8.0, )"
@@ -225,14 +234,14 @@
         }
       }
     },
-    "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Infra/ToDo.Infra.csproj": {
+    "/home/leandrobezerra/ToDo/ToDo/ToDo.Infra/ToDo.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Infra/ToDo.Infra.csproj",
+        "projectUniqueName": "/home/leandrobezerra/ToDo/ToDo/ToDo.Infra/ToDo.Infra.csproj",
         "projectName": "ToDo.Infra",
-        "projectPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Infra/ToDo.Infra.csproj",
+        "projectPath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Infra/ToDo.Infra.csproj",
         "packagesPath": "/home/leandrobezerra/.nuget/packages/",
-        "outputPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Infra/obj/",
+        "outputPath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Infra/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/leandrobezerra/.nuget/NuGet/NuGet.Config"
@@ -247,8 +256,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Domain/ToDo.Domain.csproj": {
-                "projectPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Domain/ToDo.Domain.csproj"
+              "/home/leandrobezerra/ToDo/ToDo/ToDo.Domain/ToDo.Domain.csproj": {
+                "projectPath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Domain/ToDo.Domain.csproj"
               }
             }
           }
@@ -263,6 +272,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.22, )"
@@ -288,59 +301,6 @@
               "version": "[6.0.2, )"
             }
           },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.406/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Services/ToDo.Services.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Services/ToDo.Services.csproj",
-        "projectName": "ToDo.Services",
-        "projectPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Services/ToDo.Services.csproj",
-        "packagesPath": "/home/leandrobezerra/.nuget/packages/",
-        "outputPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Services/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/home/leandrobezerra/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",

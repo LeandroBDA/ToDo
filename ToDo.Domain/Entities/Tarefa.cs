@@ -2,15 +2,20 @@ using ToDo.Domain.Entites;
 using Microsoft.EntityFrameworkCore.Migrations.Operations;
 using ToDo.Core.Exceptions;
 using ToDo.Domain.Entities;
+using ToDo.Domain.Validator;
 
 namespace ToDo.Domain.Validators
 {
-    public class Tasks : Base
+    public class Tarefa : Base
     {
-        public Tasks()
-        { }
+        public Tarefa(string name, string description, User user)
+        {
+            Name = name;
+            Description = description;
+            User = user;
+        }
 
-        public Tasks(int id,
+        public Tarefa(int id,
             DateTime updatedAt,
             string name,
             string description,
@@ -18,7 +23,7 @@ namespace ToDo.Domain.Validators
             DateTime createdAt,
             bool concluded,
             DateTime concludedAt,
-            DateTime deadline)
+            DateTime deadline, User user)
         {
             Id = id;
             Name = name;
@@ -27,6 +32,7 @@ namespace ToDo.Domain.Validators
             Concluded = concluded;
             ConcludedAt = concludedAt;
             Deadline = deadline;
+            User = user;
             CreatedAt = createdAt;
             UpdatedAt = updatedAt;
             _errors = new List<string>();
@@ -61,7 +67,7 @@ namespace ToDo.Domain.Validators
 
         public override bool Validate()
         {
-            var validate = new TasksValidator();
+            var validate = new TarefaValidator();
             var validation = validate.Validate(this);
 
             if (!validation.IsValid)
