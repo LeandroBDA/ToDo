@@ -16,10 +16,6 @@ namespace ToDo.Infra.Mappings
                 .HasColumnName("Id")
                 .HasColumnType("VARCHAR()");
 
-            builder.Property(x => x.Role)
-                .HasColumnName("Roles")
-                .HasColumnType("VARCHAR(15)");
-
             builder.Property(x => x.Name)
                 .IsRequired()
                 .HasMaxLength(80)
@@ -38,7 +34,7 @@ namespace ToDo.Infra.Mappings
                 .HasColumnType("VARCHAR(60)");
 
             builder
-                .HasMany(x => x.Tasks)
+                .HasMany(x => x.Tarefas)
                 .WithOne(p => p.User)
                 .OnDelete(DeleteBehavior.Restrict); //so consigo apagar um usario se ele nao tiver mais tarefas
         }

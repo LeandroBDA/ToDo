@@ -7,7 +7,7 @@ namespace ToDo.Infra.Interfaces
     {
         Task<T> Create(T obj);
         Task<T> Update(T obj);
-        Task<Tasks?> GetById(int id);
+        Task<T?> GetById(int id);
         Task<List<T>> Search();
         Task Remove(int id);
     }

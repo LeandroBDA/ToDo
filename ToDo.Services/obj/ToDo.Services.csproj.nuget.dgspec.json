@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Services/ToDo.Services.csproj": {}
+    "/home/leandrobezerra/ToDo/ToDo/ToDo.Services/ToDo.Services.csproj": {}
   },
   "projects": {
-    "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Services/ToDo.Services.csproj": {
+    "/home/leandrobezerra/ToDo/ToDo/ToDo.Services/ToDo.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Services/ToDo.Services.csproj",
+        "projectUniqueName": "/home/leandrobezerra/ToDo/ToDo/ToDo.Services/ToDo.Services.csproj",
         "projectName": "ToDo.Services",
-        "projectPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Services/ToDo.Services.csproj",
+        "projectPath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Services/ToDo.Services.csproj",
         "packagesPath": "/home/leandrobezerra/.nuget/packages/",
-        "outputPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Services/obj/",
+        "outputPath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Services/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/leandrobezerra/.nuget/NuGet/NuGet.Config"

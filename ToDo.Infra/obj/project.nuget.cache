@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "6ujaac3/QJFpPAjvshTboaJJ+1+Gg6ZFw6LVGGpwhPwASTRcI5J5s4Kya8OSiJFiNIgEon2MKEeItRixzmNOeg==",
+  "dgSpecHash": "6eI71P2yRKfuCCvCG/IHOKshM63HwVVPm5XxxVFBPn7ud59e+4tsvTfTNCQqFtZh0BMQrq4QyQFqzJlS0nyV7Q==",
   "success": true,
-  "projectFilePath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Infra/ToDo.Infra.csproj",
+  "projectFilePath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Infra/ToDo.Infra.csproj",
   "expectedPackageFiles": [
+    "/home/leandrobezerra/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/fluentvalidation/11.8.0/fluentvalidation.11.8.0.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/home/leandrobezerra/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/microsoft.entityframeworkcore/6.0.22/microsoft.entityframeworkcore.6.0.22.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.22/microsoft.entityframeworkcore.abstractions.6.0.22.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.22/microsoft.entityframeworkcore.analyzers.6.0.22.nupkg.sha512",

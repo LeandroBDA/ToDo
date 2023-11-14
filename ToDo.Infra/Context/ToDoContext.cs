@@ -17,7 +17,7 @@ namespace ToDo.Infra.Context
         }
 
         public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<Tasks> Tasks { get; set; }
+        public virtual DbSet<Tarefa> Tasks { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

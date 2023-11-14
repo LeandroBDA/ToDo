@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "68rw0tifxVIs4B01CVRwkCYkCe/eptix58jg3bAjI9u8oyyLvsqd4zjSQgh99Ai0qxkxwwC32SfnnVp0HJZeWA==",
+  "dgSpecHash": "hbucLiC97Act7Bb3t5eQHUNaCRGqP3YDn8kAB7Iv51UUSeRKGQnr6GY9vtcMWh9q5JUN9iDTBW9e4NFZRqOCUQ==",
   "success": true,
-  "projectFilePath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Services/ToDo.Services.csproj",
+  "projectFilePath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Services/ToDo.Services.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

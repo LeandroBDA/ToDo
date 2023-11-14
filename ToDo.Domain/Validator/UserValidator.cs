@@ -1,9 +1,7 @@
-using System.Diagnostics.CodeAnalysis;
 using FluentValidation;
-using ToDo.Domain.Entites;
 using ToDo.Domain.Entities;
 
-namespace ToDo.Domain.Validators
+namespace ToDo.Domain.Validator
 {
     public class UserValidator : AbstractValidator<User>
     {

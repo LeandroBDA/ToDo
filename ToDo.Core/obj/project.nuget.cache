@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "F2XQtFw/Pxa3yz4cBEsOISgxz4gOXN8fprqXV8/RiCrCarxzxZvEK/3xs8Tqj7ACkFqfZdJM0al7t0rSaUDePQ==",
+  "dgSpecHash": "Tf3GafjdjGMcXZQyEG8AiqYw1H+tKjmYG+whk4Lz07tHarcHss1Z3/UQjI5R5j1NTAeVnkUu2lNpfus/ZWoszw==",
   "success": true,
-  "projectFilePath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Core/ToDo.Core.csproj",
+  "projectFilePath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Core/ToDo.Core.csproj",
   "expectedPackageFiles": [
+    "/home/leandrobezerra/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/home/leandrobezerra/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/microsoft.entityframeworkcore/6.0.22/microsoft.entityframeworkcore.6.0.22.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.22/microsoft.entityframeworkcore.abstractions.6.0.22.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.22/microsoft.entityframeworkcore.analyzers.6.0.22.nupkg.sha512",

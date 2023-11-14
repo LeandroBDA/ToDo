@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Core/ToDo.Core.csproj": {}
+    "/home/leandrobezerra/ToDo/ToDo/ToDo.Core/ToDo.Core.csproj": {}
   },
   "projects": {
-    "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Core/ToDo.Core.csproj": {
+    "/home/leandrobezerra/ToDo/ToDo/ToDo.Core/ToDo.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Core/ToDo.Core.csproj",
+        "projectUniqueName": "/home/leandrobezerra/ToDo/ToDo/ToDo.Core/ToDo.Core.csproj",
         "projectName": "ToDo.Core",
-        "projectPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Core/ToDo.Core.csproj",
+        "projectPath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Core/ToDo.Core.csproj",
         "packagesPath": "/home/leandrobezerra/.nuget/packages/",
-        "outputPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Core/obj/",
+        "outputPath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/leandrobezerra/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Pomelo.EntityFrameworkCore.Lolita2.MySql": {
               "target": "Package",
               "version": "[6.0.0, )"
