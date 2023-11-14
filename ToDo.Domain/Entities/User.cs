@@ -19,7 +19,7 @@ namespace ToDo.Domain.Entities
         public string Role { get; private set; } 
         public string Name { get; private set; }
         public string Email { get; private set; }
-        public string  Password { get; private set; }
+        public string  Password { get; set; }
         
         //ef
         public List<Tasks> Tasks { get; set; } = new List<Tasks>();

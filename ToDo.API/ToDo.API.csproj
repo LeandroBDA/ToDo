@@ -23,6 +23,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\ToDo.Infra\ToDo.Infra.csproj" />
+      <ProjectReference Include="..\ToDo.Services\ToDo.Services.csproj" />
     </ItemGroup>
 
 </Project>

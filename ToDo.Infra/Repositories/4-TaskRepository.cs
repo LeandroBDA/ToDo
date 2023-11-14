@@ -34,7 +34,7 @@ namespace ToDo.Infra.Repositories
 
             return true;
         }
-        public async Task<Tasks?> GetById(Guid id)
+        public async Task<Tasks?> GetById(int id)
         {
             return await _context.Tasks
                 .AsNoTracking()
@@ -71,6 +71,16 @@ namespace ToDo.Infra.Repositories
             _context.SaveChangesAsync();
 
             return true;
+        }
+
+        public Task<Tasks> Get(int id, int userId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> Remove(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

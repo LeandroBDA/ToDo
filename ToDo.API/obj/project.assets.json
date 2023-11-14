@@ -525,6 +525,16 @@
         "runtime": {
           "bin/placeholder/ToDo.Infra.dll": {}
         }
+      },
+      "ToDo.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ToDo.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ToDo.Services.dll": {}
+        }
       }
     }
   },
@@ -1170,6 +1180,11 @@
       "type": "project",
       "path": "../ToDo.Infra/ToDo.Infra.csproj",
       "msbuildProject": "../ToDo.Infra/ToDo.Infra.csproj"
+    },
+    "ToDo.Services/1.0.0": {
+      "type": "project",
+      "path": "../ToDo.Services/ToDo.Services.csproj",
+      "msbuildProject": "../ToDo.Services/ToDo.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1179,7 +1194,8 @@
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.22",
       "Pomelo.EntityFrameworkCore.MySql >= 6.0.2",
       "Swashbuckle.AspNetCore >= 6.2.3",
-      "ToDo.Infra >= 1.0.0"
+      "ToDo.Infra >= 1.0.0",
+      "ToDo.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1209,6 +1225,9 @@
           "projectReferences": {
             "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Infra/ToDo.Infra.csproj": {
               "projectPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Infra/ToDo.Infra.csproj"
+            },
+            "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Services/ToDo.Services.csproj": {
+              "projectPath": "/home/leandrobezerra/RiderProjects/ToDo/ToDo.Services/ToDo.Services.csproj"
             }
           }
         }

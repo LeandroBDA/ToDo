@@ -31,34 +31,31 @@ namespace ToDo.Infra.Repositories
             return obj;
         }
 
-        public Task<Tasks?> GetById(Guid id)
+        public virtual async Task Remove(int id)
         {
-            throw new NotImplementedException();
-        }
+            Tasks? tasks = await GetById(id);
 
-        public virtual async Task<T> Remove(int id)
-        {
-            var obj = await GetById(id);
-
-            if (obj != null)
+            if ( tasks != null)
             {
-                _context.Remove(obj);
+                _context.Remove(tasks);
                 await _context.SaveChangesAsync();
-                return obj;
             }
             else
             {
-                return obj;
+                Console.Clear();
+                Console.WriteLine("Não existem Tasks no momento");
+                Thread.Sleep(5000);
+                Console.Clear();
             }
-        } 
-        public virtual async Task<T?> GetById(int id) 
+        }
+        public virtual async Task<Tasks?> GetById(int id) 
         {
-            var obj = await _context.Set<T>()
+            var Task = await _context.Set<T>()
                 .AsNoTracking()
                 .Where(x => x.Id == id)
                 .ToListAsync();
 
-            return obj.FirstOrDefault();
+            return Task.FirstOrDefault();
         }
 
         public virtual async Task<List<T>> Search()
