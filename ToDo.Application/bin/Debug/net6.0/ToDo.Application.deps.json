@@ -8,12 +8,35 @@
     ".NETCoreApp,Version=v6.0": {
       "ToDo.Application/1.0.0": {
         "dependencies": {
-          "Pomelo.EntityFrameworkCore.Lolita2.MySql": "6.0.0"
+          "AutoMapper": "12.0.1",
+          "Pomelo.EntityFrameworkCore.Lolita2.MySql": "6.0.0",
+          "ToDo.Core": "1.0.0",
+          "ToDo.Infra": "1.0.0"
         },
         "runtime": {
           "ToDo.Application.dll": {}
         }
       },
+      "AutoMapper/12.0.1": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.1.0"
+          }
+        }
+      },
+      "FluentValidation/11.8.0": {
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.8.0.0"
+          }
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {},
       "Microsoft.EntityFrameworkCore/6.0.22": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "6.0.22",
@@ -155,6 +178,14 @@
           }
         }
       },
+      "MySqlConnector/2.1.2": {
+        "runtime": {
+          "lib/net6.0/MySqlConnector.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.2.0"
+          }
+        }
+      },
       "Pomelo.EntityFrameworkCore.Lolita2/6.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "6.0.22"
@@ -177,6 +208,19 @@
           }
         }
       },
+      "Pomelo.EntityFrameworkCore.MySql/6.0.2": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.22",
+          "Microsoft.Extensions.DependencyInjection": "6.0.1",
+          "MySqlConnector": "2.1.2"
+        },
+        "runtime": {
+          "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll": {
+            "assemblyVersion": "6.0.2.0",
+            "fileVersion": "6.0.2.0"
+          }
+        }
+      },
       "System.Collections.Immutable/6.0.0": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
@@ -193,7 +237,41 @@
           }
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/6.0.0": {}
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "ToDo.Core/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "Pomelo.EntityFrameworkCore.Lolita2.MySql": "6.0.0"
+        },
+        "runtime": {
+          "ToDo.Core.dll": {}
+        }
+      },
+      "ToDo.Domain/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "FluentValidation": "11.8.0",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.22",
+          "Pomelo.EntityFrameworkCore.Lolita2.MySql": "6.0.0",
+          "Pomelo.EntityFrameworkCore.MySql": "6.0.2",
+          "ToDo.Core": "1.0.0"
+        },
+        "runtime": {
+          "ToDo.Domain.dll": {}
+        }
+      },
+      "ToDo.Infra/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "Microsoft.EntityFrameworkCore": "6.0.22",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.22",
+          "Pomelo.EntityFrameworkCore.MySql": "6.0.2",
+          "ToDo.Domain": "1.0.0"
+        },
+        "runtime": {
+          "ToDo.Infra.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -201,6 +279,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/12.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hvV62vl6Hp/WfQ24yzo3Co9+OPl8wH8hApwVtgWpiAynVJkUcs7xvehnSftawL8Pe8FrPffBRM3hwzLQqWDNjA==",
+      "path": "automapper/12.0.1",
+      "hashPath": "automapper.12.0.1.nupkg.sha512"
+    },
+    "FluentValidation/11.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TiEaaYqSIAS+wXQv46LRm8Mca092XYNePD0n231Hqlkmm5FuToZoWnjI1ef/vJUxBzqR7/k2vaVQXxijNgVKRQ==",
+      "path": "fluentvalidation/11.8.0",
+      "hashPath": "fluentvalidation.11.8.0.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/6.0.22": {
       "type": "package",
@@ -293,6 +392,13 @@
       "path": "microsoft.extensions.primitives/6.0.0",
       "hashPath": "microsoft.extensions.primitives.6.0.0.nupkg.sha512"
     },
+    "MySqlConnector/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JVokQTUNN3WHAu9Vw8ieeq1dXTFokJiig5P0VJ4f439UxRrsPo6SaVWC8Zdm6mkPeQFhZ0/9afdWa02EY/1j/w==",
+      "path": "mysqlconnector/2.1.2",
+      "hashPath": "mysqlconnector.2.1.2.nupkg.sha512"
+    },
     "Pomelo.EntityFrameworkCore.Lolita2/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -306,6 +412,13 @@
       "sha512": "sha512-tXWIIB/v104gw4XQ0W6Km0fks7YrenmYADZiHedQfDxsym0FkCgj3Ew9zD9l1Hy2KP82IY36oXmSu0gqH80Ytg==",
       "path": "pomelo.entityframeworkcore.lolita2.mysql/6.0.0",
       "hashPath": "pomelo.entityframeworkcore.lolita2.mysql.6.0.0.nupkg.sha512"
+    },
+    "Pomelo.EntityFrameworkCore.MySql/6.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KvlZ800CnEuEGnxj5OT1fCKGjQXxW5kpPlCP91JqBYG+2Z3927eqXmlX6LLKUt4swqE8ZsEQ+Zkpab8bqstf4g==",
+      "path": "pomelo.entityframeworkcore.mysql/6.0.2",
+      "hashPath": "pomelo.entityframeworkcore.mysql.6.0.2.nupkg.sha512"
     },
     "System.Collections.Immutable/6.0.0": {
       "type": "package",
@@ -327,6 +440,21 @@
       "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
       "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "ToDo.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ToDo.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ToDo.Infra/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

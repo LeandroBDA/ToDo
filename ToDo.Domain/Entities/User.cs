@@ -1,27 +1,14 @@
 using ToDo.Core.Exceptions;
 using ToDo.Domain.Entites;
 using ToDo.Domain.Validator;
-using ToDo.Domain.Validators;
 
 namespace ToDo.Domain.Entities
-{
+{ 
     public class User : Base
     {
-        protected User() { }
-        public User(int id, string name, string email, string password)
-        {
-            Id = id;
-            Name = name;
-            Email = email;
-            Password = password;
-            _errors = new List<string>();
-        } 
-        public string Name { get; private set; }
-        public string Email { get; private set; }
-        public string  Password { get; set; }
-        
-        //ef
-        public List<Tarefa> Tarefas { get; set; } = new List<Tarefa>();
+        public string Name { get; private set; } = null!;
+        public string Email { get; private set; } = null!;
+        public string  Password { get; private set; } = null!;
         public void ChangeName(string name)
         {
             Name = name; Validate();

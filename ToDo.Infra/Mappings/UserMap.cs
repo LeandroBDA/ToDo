@@ -1,4 +1,3 @@
-using ToDo.Domain.Entites;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using ToDo.Domain.Entities;
@@ -32,11 +31,6 @@ namespace ToDo.Infra.Mappings
                 .IsRequired()
                 .HasColumnName("PassWord")
                 .HasColumnType("VARCHAR(60)");
-
-            builder
-                .HasMany(x => x.Tarefas)
-                .WithOne(p => p.User)
-                .OnDelete(DeleteBehavior.Restrict); //so consigo apagar um usario se ele nao tiver mais tarefas
         }
     }
 }

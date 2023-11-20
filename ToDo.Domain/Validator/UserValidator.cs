@@ -7,14 +7,8 @@ namespace ToDo.Domain.Validator
     {
         public UserValidator()
         {
-            RuleFor(x => x)
-                .NotEmpty().WithMessage("A entidade não pode ser vazia.")
-                .NotNull().WithMessage("A entidade não pode ser nula.");
-
             RuleFor(x => x.Name)
                 .NotEmpty()
-                .WithMessage("O nome não pode ser nulo")
-                .NotNull()
                 .WithMessage("O nome não pode ser vazio.")
                 .MinimumLength(3)
                 .WithMessage("O nome deve conter no mínimo 3 caracteres.")
@@ -24,8 +18,6 @@ namespace ToDo.Domain.Validator
             RuleFor(x => x.Email)
                 .NotEmpty()
                 .WithMessage("O email não pode ser nulo")
-                .NotNull()
-                .WithMessage("O email não pode ser vazio.")
                 .MinimumLength(15)
                 .WithMessage("O email deve ter no mínimo 15 caracteres.")
                 .MaximumLength(90)
@@ -34,8 +26,6 @@ namespace ToDo.Domain.Validator
             RuleFor(x => x.Password)
                 .NotEmpty()
                 .WithMessage("A senha não pode ser nula")
-                .NotNull()
-                .WithMessage("A senha não pode ser vazia.")
                 .MinimumLength(8)
                 .WithMessage("A senha deve conter no mínimo 8 caracteres.")
                 .MaximumLength(60)

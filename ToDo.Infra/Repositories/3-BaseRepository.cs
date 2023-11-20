@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using ToDo.Domain.Entites;
 
 namespace ToDo.Infra.Repositories
-{
+{ 
     public class BaseRepository<T> : IBaseRepository<T> where T : Base
     {
         private readonly ToDoContext _context;
@@ -12,8 +12,7 @@ namespace ToDo.Infra.Repositories
         public BaseRepository(ToDoContext context)
         {
             _context = context;
-        }
-
+        } 
         public virtual async Task<T> Create(T obj)
         {
             _context.Add(obj);
@@ -21,7 +20,6 @@ namespace ToDo.Infra.Repositories
 
             return obj;
         }
-
         public async Task<T> Update(T obj)
         {
             _context.Entry(obj).State = EntityState.Modified;
@@ -29,7 +27,6 @@ namespace ToDo.Infra.Repositories
 
             return obj;
         }
-
         public async Task<T?> GetById(int id)
         {
             var obj = await _context.Set<T>()
@@ -39,19 +36,16 @@ namespace ToDo.Infra.Repositories
 
             return obj.FirstOrDefault();
         }
-
-        public virtual async Task Remove(int id)
+        public virtual async Task Remove(int id) 
         {
-            var obj = await GetById(id);
 
-            if (obj != null)
-            {
-                _context.Remove(obj);
-                await _context.SaveChangesAsync();
-            }
-        }
+            var obj = _context.Set<T>()
+                .Where(x => x.Id == id)
+                .AsNoTracking();
 
-        public virtual async Task<List<T>> Search()
+            _context.Remove(obj);
+        } 
+        public virtual async Task<List<T>> Get()
         {
             return await _context.Set<T>()
                 .AsNoTracking()

@@ -1,5 +1,5 @@
 
-using ToDo.Domain.Validators;
+using ToDo.Domain.Entities;
 
 namespace ToDo.Infra.Interfaces
 {
@@ -8,8 +8,8 @@ namespace ToDo.Infra.Interfaces
         Task<T> Create(T obj);
         Task<T> Update(T obj);
         Task<T?> GetById(int id);
-        Task<List<T>> Search();
-        Task Remove(int id);
+        Task<List<T?>> Get();
+        Task Remove(T obj);
     }
 }
 

@@ -505,6 +505,22 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "ToDo.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "Pomelo.EntityFrameworkCore.Lolita2.MySql": "6.0.0",
+          "ToDo.Core": "1.0.0",
+          "ToDo.Infra": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ToDo.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ToDo.Application.dll": {}
+        }
+      },
       "ToDo.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1268,6 +1284,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "ToDo.Application/1.0.0": {
+      "type": "project",
+      "path": "../ToDo.Application/ToDo.Application.csproj",
+      "msbuildProject": "../ToDo.Application/ToDo.Application.csproj"
+    },
     "ToDo.Core/1.0.0": {
       "type": "project",
       "path": "../ToDo.Core/ToDo.Core.csproj",
@@ -1292,6 +1313,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.22",
       "Pomelo.EntityFrameworkCore.MySql >= 6.0.2",
       "Swashbuckle.AspNetCore >= 6.2.3",
+      "ToDo.Application >= 1.0.0",
       "ToDo.Infra >= 1.0.0"
     ]
   },
@@ -1320,6 +1342,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "/home/leandrobezerra/ToDo/ToDo/ToDo.Application/ToDo.Application.csproj": {
+              "projectPath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Application/ToDo.Application.csproj"
+            },
             "/home/leandrobezerra/ToDo/ToDo/ToDo.Infra/ToDo.Infra.csproj": {
               "projectPath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Infra/ToDo.Infra.csproj"
             }
