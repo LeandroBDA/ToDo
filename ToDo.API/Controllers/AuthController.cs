@@ -19,7 +19,7 @@ public class AuthController : ControllerBase
 
     [HttpPost]
     [Route("/api/v1/auth/login")]
-    public IActionResult Login([FromBody] LoginViewModel loginViewModel)
+    public IActionResult Login([FromForm] LoginViewModel loginViewModel)
     {
         try
         {

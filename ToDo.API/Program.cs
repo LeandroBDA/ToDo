@@ -60,7 +60,7 @@ builder.Services.AddSwaggerGen(c =>
     {
         Title = "ToDo API",
         Version = "v1",
-        Description = "API Reformulada por Leandro.B Araújo, projeto final do NDS, aplicação de Tarefas.",
+        Description = "API Reformulada por Leandro.B Araújo, projeto final do NDS, adicionando tarefas para usuários.",
         Contact = new OpenApiContact
         {
             Name = "Leandro Bezerra de Araújo",

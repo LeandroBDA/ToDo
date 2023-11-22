@@ -24,7 +24,7 @@ public class UserController : ControllerBase
 
     [HttpPost]
     [Route("/api/v1/users/create")]
-    public async Task<IActionResult> Create([FromBody] CreateUserViewModel userViewModel)
+    public async Task<IActionResult> Create([FromForm] CreateUserViewModel userViewModel)
     {
         try
         {
@@ -51,7 +51,7 @@ public class UserController : ControllerBase
     [HttpPut]
     // [Authorize]
     [Route("/api/v1/users/update")]
-    public async Task<IActionResult> Update([FromBody] UpdateUserViewModel userViewModel)
+    public async Task<IActionResult> Update([FromForm] UpdateUserViewModel userViewModel)
     {
         try
         {
