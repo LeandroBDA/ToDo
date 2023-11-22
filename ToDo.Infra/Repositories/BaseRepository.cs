@@ -1,18 +1,20 @@
+using System.Runtime.Intrinsics.X86;
+using ToDo.Domain.Entities;
 using ToDo.Infra.Context;
 using ToDo.Infra.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using ToDo.Domain.Entites;
 
 namespace ToDo.Infra.Repositories
-{ 
+{
     public class BaseRepository<T> : IBaseRepository<T> where T : Base
     {
         private readonly ToDoContext _context;
 
-        public BaseRepository(ToDoContext context)
+        protected BaseRepository(ToDoContext context)
         {
             _context = context;
-        } 
+        }
+
         public virtual async Task<T> Create(T obj)
         {
             _context.Add(obj);
@@ -20,14 +22,27 @@ namespace ToDo.Infra.Repositories
 
             return obj;
         }
-        public async Task<T> Update(T obj)
+
+        public virtual async Task<T> Update(T obj)
         {
             _context.Entry(obj).State = EntityState.Modified;
             await _context.SaveChangesAsync();
 
             return obj;
         }
-        public async Task<T?> GetById(int id)
+
+        public virtual async Task Remove(long id)
+        {
+            var obj = await Get(id);
+
+            if (obj != null)
+            {
+                _context.Remove(obj);
+                await _context.SaveChangesAsync();
+            }
+        }
+
+        public virtual async Task<T> Get(long id)
         {
             var obj = await _context.Set<T>()
                 .AsNoTracking()
@@ -36,15 +51,7 @@ namespace ToDo.Infra.Repositories
 
             return obj.FirstOrDefault();
         }
-        public virtual async Task Remove(int id) 
-        {
 
-            var obj = _context.Set<T>()
-                .Where(x => x.Id == id)
-                .AsNoTracking();
-
-            _context.Remove(obj);
-        } 
         public virtual async Task<List<T>> Get()
         {
             return await _context.Set<T>()
@@ -52,5 +59,5 @@ namespace ToDo.Infra.Repositories
                 .ToListAsync();
         }
     }
+    
 }
-

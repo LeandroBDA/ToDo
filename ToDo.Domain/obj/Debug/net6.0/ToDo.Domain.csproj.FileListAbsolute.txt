@@ -16,14 +16,11 @@
 /home/leandrobezerra/ToDo/ToDo/ToDo.Domain/bin/Debug/net6.0/ToDo.Domain.deps.json
 /home/leandrobezerra/ToDo/ToDo/ToDo.Domain/bin/Debug/net6.0/ToDo.Domain.dll
 /home/leandrobezerra/ToDo/ToDo/ToDo.Domain/bin/Debug/net6.0/ToDo.Domain.pdb
-/home/leandrobezerra/ToDo/ToDo/ToDo.Domain/bin/Debug/net6.0/ToDo.Core.dll
-/home/leandrobezerra/ToDo/ToDo/ToDo.Domain/bin/Debug/net6.0/ToDo.Core.pdb
 /home/leandrobezerra/ToDo/ToDo/ToDo.Domain/obj/Debug/net6.0/ToDo.Domain.csproj.AssemblyReference.cache
 /home/leandrobezerra/ToDo/ToDo/ToDo.Domain/obj/Debug/net6.0/ToDo.Domain.GeneratedMSBuildEditorConfig.editorconfig
 /home/leandrobezerra/ToDo/ToDo/ToDo.Domain/obj/Debug/net6.0/ToDo.Domain.AssemblyInfoInputs.cache
 /home/leandrobezerra/ToDo/ToDo/ToDo.Domain/obj/Debug/net6.0/ToDo.Domain.AssemblyInfo.cs
 /home/leandrobezerra/ToDo/ToDo/ToDo.Domain/obj/Debug/net6.0/ToDo.Domain.csproj.CoreCompileInputs.cache
-/home/leandrobezerra/ToDo/ToDo/ToDo.Domain/obj/Debug/net6.0/ToDo.Domain.csproj.CopyComplete
 /home/leandrobezerra/ToDo/ToDo/ToDo.Domain/obj/Debug/net6.0/ToDo.Domain.dll
 /home/leandrobezerra/ToDo/ToDo/ToDo.Domain/obj/Debug/net6.0/refint/ToDo.Domain.dll
 /home/leandrobezerra/ToDo/ToDo/ToDo.Domain/obj/Debug/net6.0/ToDo.Domain.pdb

@@ -12,10 +12,7 @@
       <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.22" />
       <PackageReference Include="Pomelo.EntityFrameworkCore.Lolita2.MySql" Version="6.0.0" />
       <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.2" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\ToDo.Core\ToDo.Core.csproj" />
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.0.3" />
     </ItemGroup>
 
 </Project>

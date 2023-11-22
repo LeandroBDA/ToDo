@@ -13,10 +13,8 @@
 /home/leandrobezerra/ToDo/ToDo/ToDo.Application/bin/Debug/net6.0/ToDo.Application.deps.json
 /home/leandrobezerra/ToDo/ToDo/ToDo.Application/bin/Debug/net6.0/ToDo.Application.dll
 /home/leandrobezerra/ToDo/ToDo/ToDo.Application/bin/Debug/net6.0/ToDo.Application.pdb
-/home/leandrobezerra/ToDo/ToDo/ToDo.Application/bin/Debug/net6.0/ToDo.Core.dll
 /home/leandrobezerra/ToDo/ToDo/ToDo.Application/bin/Debug/net6.0/ToDo.Domain.dll
 /home/leandrobezerra/ToDo/ToDo/ToDo.Application/bin/Debug/net6.0/ToDo.Infra.dll
-/home/leandrobezerra/ToDo/ToDo/ToDo.Application/bin/Debug/net6.0/ToDo.Core.pdb
 /home/leandrobezerra/ToDo/ToDo/ToDo.Application/bin/Debug/net6.0/ToDo.Infra.pdb
 /home/leandrobezerra/ToDo/ToDo/ToDo.Application/bin/Debug/net6.0/ToDo.Domain.pdb
 /home/leandrobezerra/ToDo/ToDo/ToDo.Application/obj/Debug/net6.0/ToDo.Application.csproj.AssemblyReference.cache

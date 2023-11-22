@@ -9,10 +9,10 @@
     <ItemGroup>
       <PackageReference Include="AutoMapper" Version="12.0.1" />
       <PackageReference Include="Pomelo.EntityFrameworkCore.Lolita2.MySql" Version="6.0.0" />
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.0.3" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ToDo.Core\ToDo.Core.csproj" />
       <ProjectReference Include="..\ToDo.Infra\ToDo.Infra.csproj" />
     </ItemGroup>
 

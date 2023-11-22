@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6eI71P2yRKfuCCvCG/IHOKshM63HwVVPm5XxxVFBPn7ud59e+4tsvTfTNCQqFtZh0BMQrq4QyQFqzJlS0nyV7Q==",
+  "dgSpecHash": "kXrpp5sPXUPelgQ04mA0JdhgxeHawfc5NpOk0X1w4xEaqUSh5NdbhJKxtFENBo2NE2JTItxRir1LBUtvJI7DMA==",
   "success": true,
   "projectFilePath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Infra/ToDo.Infra.csproj",
   "expectedPackageFiles": [
@@ -23,12 +23,17 @@
     "/home/leandrobezerra/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.0/microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/home/leandrobezerra/.nuget/packages/microsoft.identitymodel.abstractions/7.0.3/microsoft.identitymodel.abstractions.7.0.3.nupkg.sha512",
+    "/home/leandrobezerra/.nuget/packages/microsoft.identitymodel.jsonwebtokens/7.0.3/microsoft.identitymodel.jsonwebtokens.7.0.3.nupkg.sha512",
+    "/home/leandrobezerra/.nuget/packages/microsoft.identitymodel.logging/7.0.3/microsoft.identitymodel.logging.7.0.3.nupkg.sha512",
+    "/home/leandrobezerra/.nuget/packages/microsoft.identitymodel.tokens/7.0.3/microsoft.identitymodel.tokens.7.0.3.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/mysqlconnector/2.1.2/mysqlconnector.2.1.2.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/pomelo.entityframeworkcore.lolita2/6.0.0/pomelo.entityframeworkcore.lolita2.6.0.0.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/pomelo.entityframeworkcore.lolita2.mysql/6.0.0/pomelo.entityframeworkcore.lolita2.mysql.6.0.0.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/pomelo.entityframeworkcore.mysql/6.0.2/pomelo.entityframeworkcore.mysql.6.0.2.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/system.diagnostics.diagnosticsource/6.0.1/system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+    "/home/leandrobezerra/.nuget/packages/system.identitymodel.tokens.jwt/7.0.3/system.identitymodel.tokens.jwt.7.0.3.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []

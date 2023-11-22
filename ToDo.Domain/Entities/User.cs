@@ -1,43 +1,57 @@
 using ToDo.Core.Exceptions;
-using ToDo.Domain.Entites;
-using ToDo.Domain.Validator;
+using ToDo.Domain.Validators;
 
-namespace ToDo.Domain.Entities
-{ 
-    public class User : Base
-    {
-        public string Name { get; private set; } = null!;
-        public string Email { get; private set; } = null!;
-        public string  Password { get; private set; } = null!;
+namespace ToDo.Domain.Entities {
+
+    public class User : Base {
+
+        public string Name { get; private set; }
+        public string Email { get; private set; } 
+        public string Password { get; private set; }
+        
+        protected User(){}
+        
+        public User(string name, string email, string password)
+        {
+            Name = name;
+            Email = email;
+            Password = password;
+            _errors = new List<string>();
+           
+            Validate();
+        }
+
         public void ChangeName(string name)
         {
-            Name = name; Validate();
-        } 
-        public void ChangeEmail(string email)
-        {
-            Email = email; Validate();
-        } 
+            Name = name;
+            Validate();
+        }
+
         public void ChangePassword(string password)
         {
-            Password = password; Validate();
-        } 
+            Password = password;
+            Validate();
+        }
+        
+        public void ChangeEmail(string email)
+        {
+            Email = email;
+            Validate();
+        }
+
         public override bool Validate()
         {
-            var validator = new UserValidator();
+            var validator = new Uservalidator();
             var validation = validator.Validate(this);
 
-            if (validation.IsValid)
-            {
+            if (!validation.IsValid)
+            { 
                 foreach (var error in validation.Errors)
-                {
-                    _errors.Add((error.ErrorMessage));
-                }
-                throw new DomainException($"Alguns campos stão inválidos {_errors[0]}");
+                    _errors.Add(error.ErrorMessage);
+
+                throw new DomainException("Alguns campos estão inválidos, por favor corrija-los!", _errors);
             }
             return true;
         }
     }
-    
 }
-
-

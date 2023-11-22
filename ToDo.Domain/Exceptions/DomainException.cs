@@ -1,3 +1,5 @@
+using System;
+
 namespace ToDo.Core.Exceptions
 {
     public class DomainException : Exception
