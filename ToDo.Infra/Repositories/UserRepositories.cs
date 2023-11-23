@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ToDo.Infra.Repositories
 {
-    public class UserRepository : BaseRepository<User>, IUserRepository
+    public class UserRepositories : BaseRepositories<User>, IUserRepository
     {
         private readonly ToDoContext _context;
 
-        public UserRepository (ToDoContext context) : base(context)
+        public UserRepositories (ToDoContext context) : base(context)
         {
             _context = context;
         }

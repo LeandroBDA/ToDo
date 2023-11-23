@@ -51,7 +51,7 @@ builder.Services.AddDbContext<ToDoContext>(options =>
 
 builder.Services.AddMvc();
 builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepositories>();
 builder.Services.AddScoped<ITokenGenerator, TokenGenerator>();
 
 builder.Services.AddSwaggerGen(c =>

@@ -11,9 +11,11 @@ public class ToDoContext : DbContext
     public ToDoContext(DbContextOptions options) : base(options) {}
 
     public virtual DbSet<User> Users { get; set; }
+    public virtual DbSet<Tarefas> Tarefas { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfiguration(new UserMap());
+        modelBuilder.ApplyConfiguration(new TarefasMap());
     }
 }

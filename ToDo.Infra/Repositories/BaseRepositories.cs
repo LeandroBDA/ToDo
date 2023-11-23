@@ -6,11 +6,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ToDo.Infra.Repositories
 {
-    public class BaseRepository<T> : IBaseRepository<T> where T : Base
+    public class BaseRepositories<T> : IBaseRepository<T> where T : Base
     {
         private readonly ToDoContext _context;
 
-        protected BaseRepository(ToDoContext context)
+        protected BaseRepositories(ToDoContext context)
         {
             _context = context;
         }
