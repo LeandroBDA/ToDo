@@ -1499,11 +1499,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/leandrobezerra/ToDo/ToDo/ToDo.API/ToDo.API.csproj",
+      "projectUniqueName": "/home/leandrobezerra/ToDo/ToDo.API/ToDo.API.csproj",
       "projectName": "ToDo.API",
-      "projectPath": "/home/leandrobezerra/ToDo/ToDo/ToDo.API/ToDo.API.csproj",
+      "projectPath": "/home/leandrobezerra/ToDo/ToDo.API/ToDo.API.csproj",
       "packagesPath": "/home/leandrobezerra/.nuget/packages/",
-      "outputPath": "/home/leandrobezerra/ToDo/ToDo/ToDo.API/obj/",
+      "outputPath": "/home/leandrobezerra/ToDo/ToDo.API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/leandrobezerra/.nuget/NuGet/NuGet.Config"
@@ -1518,11 +1518,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/home/leandrobezerra/ToDo/ToDo/ToDo.Application/ToDo.Application.csproj": {
-              "projectPath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Application/ToDo.Application.csproj"
+            "/home/leandrobezerra/ToDo/ToDo.Application/ToDo.Application.csproj": {
+              "projectPath": "/home/leandrobezerra/ToDo/ToDo.Application/ToDo.Application.csproj"
             },
-            "/home/leandrobezerra/ToDo/ToDo/ToDo.Infra/ToDo.Infra.csproj": {
-              "projectPath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Infra/ToDo.Infra.csproj"
+            "/home/leandrobezerra/ToDo/ToDo.Infra/ToDo.Infra.csproj": {
+              "projectPath": "/home/leandrobezerra/ToDo/ToDo.Infra/ToDo.Infra.csproj"
             }
           }
         }

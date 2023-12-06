@@ -1,61 +1,62 @@
-using System.Xml.Schema;
+using ToDo.Core.Exceptions;
 using ToDo.Domain.Entities;
 using ToDo.Infra.Context;
 using ToDo.Infra.Interfaces;
-using ToDo.Infra.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Task = ToDo.Domain.Entities.Tarefas;
 
-namespace ToDo.Infra.Repositories
+namespace ToDo.Infra.Repositories;
+
+public class UserRepositories : BaseRepositories<User>, IUserRepository
 {
-    public class UserRepositories : BaseRepositories<User>, IUserRepository
+    public UserRepositories(ToDoContext context) : base(context)
     {
-        private readonly ToDoContext _context;
+        _context = context;
+    }
 
-        public UserRepositories (ToDoContext context) : base(context)
+    private readonly ToDoContext _context;
+
+    public virtual async Task<bool> Remove(Guid id)
+    {
+        var obj = await _context.Set<User>().SingleOrDefaultAsync(x => !Equals(x.Id, id));
+        
+        if (obj == null) return false;
+        
+        List<Task> tasks = await _context.Tarefas
+            .Where(y => y.UserId == id)
+            .ToListAsync();
+
+        foreach (var task in tasks)
         {
-            _context = context;
+            _context.Remove(task);
         }
 
-        public async Task<User> GetByEmail(string email)
-        {
-            var user = await _context.Users
-                .Where
-                (
-                    x => 
-                        x.Email.ToLower() == email.ToLower()
-                )
-                .AsNoTracking()
-                .ToListAsync();
-           
-            return user.FirstOrDefault();
-        }
+        _context.Remove(obj);
+        await _context.SaveChangesAsync();
 
-        public async Task<List<User>> SearchByEmail(string email)
-        {
-            var allUsers = await _context.Users
-                .Where
-                (
-                    x => 
-                        x.Email.ToLower().Contains(email.ToLower())
-                )
-                .AsNoTracking()
-                .ToListAsync();
-           
-            return allUsers;
-        }
+        return true;
+    }
+    
+    public async Task<User?> GetByEmail(string email)
+    {
+        return await _context.Users
+            .AsNoTracking()
+            .FirstOrDefaultAsync(x => x.Email.ToLower() == email.ToLower());
+    }
 
-        public async Task<List<User>> SearchByName(string name)
-        {
-            var allUsers = await _context.Users
-                .Where
-                (
-                    x => 
-                        x.Email.ToLower().Contains(name.ToLower())
-                )
-                .AsNoTracking()
-                .ToListAsync();
-           
-            return allUsers;
-        }
+    public async Task<List<User>> SearchByEmail(string email)
+    {
+        return await _context.Users
+            .Where(x => x.Email.ToLower().Contains(email.ToLower()))
+            .AsNoTracking()
+            .ToListAsync();
+    }
+
+    public async Task<List<User>> SearchByName(string name)
+    {
+        return await _context.Users
+            .Where(x => x.Name.ToLower().Contains(name.ToLower()))
+            .AsNoTracking()
+            .ToListAsync();
     }
 }

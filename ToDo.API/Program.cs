@@ -12,6 +12,8 @@ using ToDo.Services.Services;
 
 
 using Microsoft.OpenApi.Models;
+using ToDo.API.ViewModels.UserViewModels;
+using ToDo.Services.DTO.User;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,7 +29,7 @@ void AutoMapperDependenceInjection()
     {
         cfg.CreateMap<User, UserDTO>().ReverseMap();
         cfg.CreateMap<CreateUserViewModel, UserDTO>().ReverseMap();
-        cfg.CreateMap<UpdateUserViewModel, UserDTO>().ReverseMap();
+        cfg.CreateMap<UpdateViewModel, UserDTO>().ReverseMap();
     });
     
     builder.Services.AddSingleton(autoMapperConfig.CreateMapper());
@@ -50,7 +52,7 @@ builder.Services.AddDbContext<ToDoContext>(options =>
 
 
 builder.Services.AddMvc();
-builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IUserService, UserServices>();
 builder.Services.AddScoped<IUserRepository, UserRepositories>();
 builder.Services.AddScoped<ITokenGenerator, TokenGenerator>();
 

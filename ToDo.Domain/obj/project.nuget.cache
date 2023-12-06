@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "joZvjPY2hhySmdAgQAg+tMYOUo03ZDzVyJ23BdnLYcXIenfHeuC2diCwKgFgrPOA5EOUohcagtoUwwSZ/Y+2uQ==",
+  "dgSpecHash": "Wp6uISOoH/h8KgND4S2ohGGYqe0q0ipYCDkfKPEs8nQ62d/mxyLf6PS+R3AN29Cvxv9P2YX6RjBRg5INRK8bwQ==",
   "success": true,
-  "projectFilePath": "/home/leandrobezerra/ToDo/ToDo/ToDo.Domain/ToDo.Domain.csproj",
+  "projectFilePath": "/home/leandrobezerra/ToDo/ToDo.Domain/ToDo.Domain.csproj",
   "expectedPackageFiles": [
     "/home/leandrobezerra/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/home/leandrobezerra/.nuget/packages/fluentvalidation/11.8.0/fluentvalidation.11.8.0.nupkg.sha512",

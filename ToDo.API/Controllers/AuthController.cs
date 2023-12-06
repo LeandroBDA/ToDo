@@ -2,6 +2,7 @@ using ToDo.API.Token;
 using ToDo.API.Utilities;
 using ToDo.API.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using ToDo.API.ViewModels.UserViewModels;
 
 namespace ToDo.API.Controllers;
 [ApiController]
@@ -19,14 +20,14 @@ public class AuthController : ControllerBase
 
     [HttpPost]
     [Route("/api/v1/auth/login")]
-    public IActionResult Login([FromForm] LoginViewModel loginViewModel)
+    public IActionResult Login([FromForm] UpdateViewModel updateViewModel)
     {
         try
         {
             var tokenLogin = _configuration["Jwt:Login"];
             var tokenPassword = _configuration["Jwt:Password"];
 
-            if (loginViewModel.Login == tokenLogin && loginViewModel.Password == tokenPassword)
+            if (UpdateViewModel.Login == tokenLogin && updateViewModel.Password == tokenPassword)
             {
                 return Ok(new ResultViewModel
                 {

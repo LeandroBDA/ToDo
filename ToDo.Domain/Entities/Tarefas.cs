@@ -1,41 +1,54 @@
 using ToDo.Core.Exceptions;
 using ToDo.Domain.Validators;
-
 namespace ToDo.Domain.Entities;
 
-public abstract class Tarefas : Base
+public class Tarefas : Base
 {
-    public Tarefas ()
-    { }
+    public Tarefas()
+    {
+        
+    }
     
-  
-    public int Id { get; private set; }
-    public string Email { get; set; }
-    public string Name { get; private set; }
-    public string Description { get; private set; }
-  
-
-    public Tarefas (int id, string description, string name )
+    public Tarefas(int id, DateTime? updatedAt, string? name, string? description, Guid userId, DateTime? createdAt, bool? concluded, DateTime? concludedAt, DateTime? deadline)
     {
         Id = id;
         Name = name;
         Description = description;
+        UserId = userId;
+        Concluded = concluded;
+        ConcludedAt = concludedAt;
+        Deadline = deadline;
+        CreatedAt = createdAt;
+        UpdatedAt = updatedAt;
         _errors = new List<string>();
-        Validate();
     }
     
-    public void ChangeName(string name)
+    public string? Name { get; set; }
+    public string? Description { get; set; }
+    public Guid UserId { get; set; }
+    public bool? Concluded { get; set; }
+    public DateTime? ConcludedAt { get; set; }
+    public DateTime? Deadline { get; set; }
+    public DateTime? CreatedAt { get; set; }
+    
+    public DateTime? UpdatedAt { get; set; }
+    
+    public void ChangeName(string? name)
     {
         Name = name;
         Validate();
     }
-
-    public void ChangeDescription(string description)
+    public void ChangeStatus(bool status)
     {
-        Description = description;
+        Concluded = status;
         Validate();
     }
-
+    public void ChangeDesc(string? desc)
+    {
+        Description = desc;
+        Validate();
+    }
+    
     public override bool Validate()
     {
         var validate = new TarefasValidators();
@@ -43,10 +56,11 @@ public abstract class Tarefas : Base
 
         if (!validation.IsValid)
         {
-            foreach (var erro in validation.Errors)
-                _errors.Add(erro.ErrorMessage);
-
-            throw new DomainException("Alguns campos estão inválidos, por favor corrija-los", _errors);
+            foreach (var error in validation.Errors)
+            {
+                _errors?.Add((error.ErrorMessage));
+            }
+            throw new DomainException($"Alguns campos estão inválidos {_errors?[0]}");
         }
 
         return true;

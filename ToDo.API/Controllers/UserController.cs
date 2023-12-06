@@ -6,6 +6,8 @@ using ToDo.API.ViewModels;
 using ToDo.Core.Exceptions;
 using ToDo.Services.DTO;
 using Microsoft.AspNetCore.Authorization;
+using ToDo.API.ViewModels.UserViewModels;
+using ToDo.Services.DTO.User;
 
 namespace ToDo.API.Controllers;
 
@@ -28,7 +30,7 @@ public class UserController : ControllerBase
     {
         try
         {
-            var userDto = _mapper.Map<UserDTO>(userViewModel);
+            string userDto = _mapper.Map<string>(userViewModel);
             var userCreated = await _userService.Create(userDto);
 
             return Ok(new ResultViewModel
@@ -51,11 +53,11 @@ public class UserController : ControllerBase
     [HttpPut]
     // [Authorize]
     [Route("/api/v1/users/update")]
-    public async Task<IActionResult> Update([FromForm] UpdateUserViewModel userViewModel)
+    public async Task<IActionResult> Update([FromForm] UpdateViewModel userViewModel)
     {
         try
         {
-            var userDto = _mapper.Map<UserDTO>(userViewModel);
+            UserDTO userDto = _mapper.Map<UserDTO>(userViewModel);
             var userUpdated = await _userService.Update(userDto);
 
             return Ok(new ResultViewModel
@@ -78,7 +80,7 @@ public class UserController : ControllerBase
     [HttpDelete]
     // [Authorize]
     [Route("/api/v1/users/Remove/{id}")]
-    public async Task<IActionResult> Remove(long id)
+    public async Task<IActionResult> Remove(Guid id)
     {
         try
         {
@@ -104,7 +106,7 @@ public class UserController : ControllerBase
     [HttpGet]
     // [Authorize]
     [Route("/api/v1/users/Get/{id}")]
-    public async Task<IActionResult> Get(long id)
+    public async Task<IActionResult> Get(Guid id)
     {
         try
         {

@@ -1,19 +1,17 @@
-using System.Threading.Tasks;
-using System.Collections.Generic;
 using ToDo.Services.DTO;
+using ToDo.Services.DTO.User;
+using ToDo.Services.DTO.User;
 
-namespace ToDo.Services.Interfaces
+namespace ToDo.Services.Interfaces;
+
+public interface IUserService
 {
-    public interface IUserService
-    {
-        Task<UserDTO> Create(UserDTO userDto);
-        Task<UserDTO> Update (UserDTO userDto);
-        Task Remove(long id);
-        Task<UserDTO> Get(long id);
-        Task<List<UserDTO>> Get();
-        Task<List<UserDTO>> SearchByName(string name);
-        Task<List<UserDTO>> SearchByEmail(string email); 
-        Task<UserDTO> GetByEmail(string email);
-
-    }
+    Task<CreateUserDTO> Create(string userDTO);
+    Task<UpdateUserDto> Update(UserDTO userDTO);
+    Task Remove(Guid id);
+    Task<UserDTO> Get(Guid id);
+    Task<List<UserDTO>> Get();
+    Task<List<UserDTO>> SearchByName(string name);
+    Task<List<UserDTO>> SearchByEmail(string email);
+    Task<UserDTO?> GetByEmail(string email);
 }

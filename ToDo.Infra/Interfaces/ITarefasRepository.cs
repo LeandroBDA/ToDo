@@ -1,15 +1,15 @@
 using ToDo.Domain.Entities;
+using Task = ToDo.Domain.Entities.Tarefas;
 
-namespace ToDo.Infra.Interfaces
+namespace ToDo.Infra.Interfaces;
+
+public interface ITarefasRepository : IBaseRepository<Tarefas>
 {
-    public interface ITarefasRepository : IBaseRepository<Tarefas>
-    {
-        Task<Tarefas> GetByEmail(string email);
 
-        Task<bool> Remove(int id);
-        Task<List<Tarefas>> SearchByEmail(string email);
+    Task<Task> Get(Guid id, Guid userId);
+    Task<bool> Remove(Guid id);
+    Task<List<Task>> Search(Guid? id, SearchTarefas? searchTask);
 
-        Task<List<Tarefas>> BuscarNome(string name);
-    }
 }
+
 

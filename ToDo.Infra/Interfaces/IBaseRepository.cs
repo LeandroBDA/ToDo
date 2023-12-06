@@ -1,15 +1,12 @@
-using System.Threading.Tasks;
 using ToDo.Domain.Entities;
-using System.Collections.Generic;
+using Task = System.Threading.Tasks.Task;
 
-namespace ToDo.Infra.Interfaces
+namespace ToDo.Infra.Interfaces;
+
+public interface IBaseRepository<T>
 {
-    public interface IBaseRepository<T> where T : Base
-    {
-        Task<T> Create(T obj);
-        Task<T> Update(T obj);
-        Task Remove(long id);
-        Task<T> Get(long id);
-        Task<List<T>> Get();
-    }
+    Task<T> Create(T obj);
+    Task<T> Update(T obj);
+    Task<T> Get(Guid id);
+    Task<List<T>> Get();
 }
